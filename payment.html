@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lootic Payment</title>
+
+<link rel="stylesheet" href="payment.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="topbar">
+
+        <a href="products.html" class="back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+        <h2>Recharge Wallet</h2>
+
+        <div class="wallet">
+            <i class="fa-solid fa-wallet"></i>
+            ₹0.00
+        </div>
+
+    </div>
+
+    <!-- Wallet Card -->
+
+    <div class="balance-card">
+
+        <p>Current Balance</p>
+
+        <h1>₹0.00</h1>
+
+        <span>Available for Investment</span>
+
+    </div>
+
+    <!-- Amount -->
+
+    <div class="card">
+
+        <h3>Enter Amount</h3>
+
+        <input
+        type="number"
+        id="amount"
+        placeholder="Enter Amount">
+
+        <div class="amount-grid">
+
+            <button>₹300</button>
+            <button>₹550</button>
+            <button>₹1480</button>
+            <button>₹3000</button>
+
+        </div>
+
+    </div>
+
+    <!-- Payment Method -->
+
+    <div class="card">
+
+        <h3>Select Payment Method</h3>
+
+        <div class="method active">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <div>
+
+                <h4>UPI Payment</h4>
+
+                <p>PhonePe • Google Pay • Paytm</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Recharge -->
+
+    <button class="pay-btn">
+
+        <i class="fa-solid fa-bolt"></i>
+
+        Recharge Now
+
+    </button>
+
+</div>
+
+<script src="payment.js"></script>
+
+</body>
+</html>

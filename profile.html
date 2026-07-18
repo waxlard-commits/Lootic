@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile</title>
+
+<link rel="stylesheet" href="profile.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="topbar">
+
+        <a href="dashboard.html" class="back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+        <h2>My Profile</h2>
+
+    </div>
+
+    <!-- Profile Card -->
+
+    <div class="profile-card">
+
+        <img src="profile.png" id="profileImage">
+
+        <button id="changePhoto">
+            <i class="fa-solid fa-camera"></i>
+        </button>
+
+        <input type="file"
+        id="profileInput"
+        accept="image/*"
+        hidden>
+
+        <h2 id="userName">Loading...</h2>
+
+        <p id="userEmail">loading@email.com</p>
+
+    </div>
+
+    <!-- Wallet -->
+
+    <div class="wallet-card">
+
+        <div class="wallet-box">
+            <h3 id="walletBalance">₹0</h3>
+            <p>Wallet Balance</p>
+        </div>
+
+        <div class="wallet-box">
+            <h3 id="totalInvestment">₹0</h3>
+            <p>Total Investment</p>
+        </div>
+
+    </div>
+
+    <!-- Menu -->
+
+    <div class="menu">
+
+        <a href="history.html" class="item">
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            <span>Payment History</span>
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </a>
+
+        <a href="products.html" class="item">
+
+            <i class="fa-solid fa-box"></i>
+
+            <span>Products</span>
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </a>
+
+        <a href="payment.html" class="item">
+
+            <i class="fa-solid fa-wallet"></i>
+
+            <span>Recharge Wallet</span>
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </a>
+
+        <a href="support.html" class="item">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <span>Support</span>
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </a>
+
+        <a href="settings.html" class="item">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </a>
+
+    </div>
+
+    <!-- Logout -->
+
+    <button id="logoutBtn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</div>
+
+<script type="module" src="profile.js"></script>
+
+</body>
+</html>

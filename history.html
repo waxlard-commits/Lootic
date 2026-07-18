@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment History</title>
+
+<link rel="stylesheet" href="history.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="topbar">
+
+        <a href="dashboard.html" class="back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+        <h2>Payment History</h2>
+
+    </div>
+
+    <!-- Total Card -->
+
+    <div class="summary-card">
+
+        <div class="box">
+            <h3>₹0</h3>
+            <p>Total Invested</p>
+        </div>
+
+        <div class="box">
+            <h3>0</h3>
+            <p>Total Payments</p>
+        </div>
+
+    </div>
+
+    <!-- Payment List -->
+
+    <div class="history-list">
+
+        <!-- Pending -->
+
+        <div class="history-card pending">
+
+            <div class="left">
+
+                <h3>₹700</h3>
+
+                <p>UTR : 123456789012</p>
+
+                <span>17 Jul 2026 • 09:30 PM</span>
+
+            </div>
+
+            <div class="status pending-text">
+
+                <i class="fa-solid fa-clock"></i>
+
+                Pending
+
+            </div>
+
+        </div>
+
+        <!-- Approved -->
+
+        <div class="history-card approved">
+
+            <div class="left">
+
+                <h3>₹550</h3>
+
+                <p>UTR : 987654321234</p>
+
+                <span>15 Jul 2026 • 04:10 PM</span>
+
+            </div>
+
+            <div class="status approved-text">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Approved
+
+            </div>
+
+        </div>
+
+        <!-- Rejected -->
+
+        <div class="history-card rejected">
+
+            <div class="left">
+
+                <h3>₹300</h3>
+
+                <p>UTR : 456123789654</p>
+
+                <span>12 Jul 2026 • 07:20 PM</span>
+
+            </div>
+
+            <div class="status rejected-text">
+
+                <i class="fa-solid fa-circle-xmark"></i>
+
+                Rejected
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="history.js"></script>
+
+</body>
+</html>

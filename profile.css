@@ -1,0 +1,207 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#0b1020;
+color:#fff;
+}
+
+.container{
+max-width:430px;
+margin:auto;
+padding:20px;
+padding-bottom:40px;
+}
+
+/* Header */
+
+.topbar{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:25px;
+}
+
+.back{
+width:45px;
+height:45px;
+background:#171f35;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+color:#8b5cf6;
+font-size:20px;
+}
+
+.topbar h2{
+font-size:28px;
+font-weight:700;
+}
+
+/* Profile Card */
+
+.profile-card{
+position:relative;
+background:linear-gradient(135deg,#7c3aed,#2563eb);
+border-radius:25px;
+padding:30px 20px;
+text-align:center;
+box-shadow:0 15px 35px rgba(124,58,237,.35);
+margin-bottom:25px;
+}
+
+.profile-card img{
+width:110px;
+height:110px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #fff;
+background:#fff;
+}
+
+#changePhoto{
+position:absolute;
+top:105px;
+left:calc(50% + 28px);
+width:38px;
+height:38px;
+border:none;
+border-radius:50%;
+background:#8b5cf6;
+color:#fff;
+cursor:pointer;
+font-size:16px;
+}
+
+.profile-card h2{
+margin-top:15px;
+font-size:24px;
+}
+
+.profile-card p{
+margin-top:6px;
+opacity:.9;
+font-size:15px;
+}
+
+/* Wallet */
+
+.wallet-card{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-bottom:25px;
+}
+
+.wallet-box{
+background:#171f35;
+padding:20px;
+border-radius:18px;
+text-align:center;
+}
+
+.wallet-box h3{
+font-size:28px;
+color:#8b5cf6;
+margin-bottom:8px;
+}
+
+.wallet-box p{
+font-size:14px;
+color:#b8b8b8;
+}
+
+/* Menu */
+
+.menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.item{
+background:#171f35;
+padding:18px;
+border-radius:18px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+text-decoration:none;
+color:#fff;
+transition:.3s;
+}
+
+.item:hover{
+transform:translateY(-2px);
+background:#222c47;
+}
+
+.item span{
+flex:1;
+margin-left:15px;
+font-size:16px;
+}
+
+.item i:first-child{
+font-size:20px;
+color:#8b5cf6;
+}
+
+/* Logout */
+
+#logoutBtn{
+width:100%;
+margin-top:30px;
+padding:18px;
+border:none;
+border-radius:18px;
+background:#ff3b5c;
+color:#fff;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+}
+
+#logoutBtn:hover{
+background:#ff2148;
+transform:translateY(-2px);
+}
+
+#logoutBtn i{
+margin-right:10px;
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.topbar h2{
+font-size:24px;
+}
+
+.profile-card img{
+width:90px;
+height:90px;
+}
+
+#changePhoto{
+top:88px;
+left:calc(50% + 20px);
+}
+
+.wallet-box h3{
+font-size:22px;
+}
+
+.item span{
+font-size:15px;
+}
+
+}

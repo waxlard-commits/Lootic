@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lootic Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+<!-- HEADER -->
+
+<header class="topbar">
+
+<button class="menu-btn" id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<div class="top-right">
+
+<button>
+
+<i class="fa-regular fa-bell"></i>
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-gear"></i>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- PROFILE -->
+
+<section class="profile-card">
+
+<div class="avatar">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<div class="profile-info">
+
+<p>👋 Welcome Back</p>
+
+<h2 id="userName">Loading...</h2>
+
+<span>Lootic Premium Member</span>
+
+</div>
+
+</section>
+
+<!-- WALLET -->
+
+<section class="wallet-card">
+
+<div>
+
+<p>Total Balance</p>
+
+<h1 id="walletBalance">₹0.00</h1>
+
+<span>Available Balance</span>
+
+</div>
+
+<div class="wallet-icon">
+
+<i class="fa-solid fa-wallet"></i>
+
+</div>
+
+</section>
+
+<!-- QUICK ACTION -->
+
+<div class="title">
+
+<h2>⚡ Quick Actions</h2>
+
+</div>
+
+<div class="action-grid">
+
+<div class="action-card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h3>Deposit</h3>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+<h3>History</h3>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-user-group"></i>
+
+<h3>Referral</h3>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>Support</h3>
+
+</div>
+
+</div>
+
+<!-- FEATURED -->
+
+<div class="title">
+
+<h2>🔥 Featured Plans</h2>
+
+</div>
+<!-- ================= OFFER CARD ================= -->
+
+<section class="offer-card">
+
+<div class="offer-left">
+
+<p>🔥 Limited Offer</p>
+
+<h2>Premium Membership</h2>
+
+<span>Unlock all premium features with one click.</span>
+
+<button id="premiumBtn">
+
+Upgrade Now
+
+</button>
+
+</div>
+
+<div class="offer-right">
+
+<div class="offer-circle">
+
+<i class="fa-solid fa-crown"></i>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PLANS ================= -->
+
+<div class="plans">
+
+<div class="plan-card">
+
+<div class="plan-top">
+
+<h3>Starter</h3>
+
+<span>Popular</span>
+
+</div>
+
+<h1>₹300</h1>
+
+<p>Basic Premium Access</p>
+
+<button class="buy-btn">Buy Now</button>
+
+</div>
+
+<div class="plan-card">
+
+<div class="plan-top">
+
+<h3>Silver</h3>
+
+<span>Best</span>
+
+</div>
+
+<h1>₹550</h1>
+
+<p>2× Rewards & Benefits</p>
+
+<button class="buy-btn">Buy Now</button>
+
+</div>
+
+<div class="plan-card">
+
+<div class="plan-top">
+
+<h3>Gold</h3>
+
+<span>Hot</span>
+
+</div>
+
+<h1>₹1480</h1>
+
+<p>Premium Gold Package</p>
+
+<button class="buy-btn">Buy Now</button>
+
+</div>
+
+<div class="plan-card">
+
+<div class="plan-top">
+
+<h3>Diamond</h3>
+
+<span>VIP</span>
+
+</div>
+
+<h1>₹3000</h1>
+
+<p>Unlimited Premium Access</p>
+
+<button class="buy-btn">Buy Now</button>
+
+</div>
+
+</div>
+
+<!-- ================= TRANSACTIONS ================= -->
+
+<div class="title">
+
+<h2>📜 Recent Transactions</h2>
+
+</div>
+
+<div class="transactions">
+
+<div class="transaction">
+
+<div class="icon success">
+
+<i class="fa-solid fa-arrow-down"></i>
+
+</div>
+
+<div class="details">
+
+<h3>Wallet Recharge</h3>
+
+<p>Today • Success</p>
+
+</div>
+
+<h2 class="green">+₹700</h2>
+
+</div>
+
+<div class="transaction">
+
+<div class="icon danger">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</div>
+
+<div class="details">
+
+<h3>Premium Purchase</h3>
+
+<p>Yesterday</p>
+
+</div>
+
+<h2 class="red">-₹199</h2>
+
+</div>
+
+<div class="transaction">
+
+<div class="icon success">
+
+<i class="fa-solid fa-gift"></i>
+
+</div>
+
+<div class="details">
+
+<h3>Referral Bonus</h3>
+
+<p>2 Days Ago</p>
+
+</div>
+
+<h2 class="green">+₹50</h2>
+
+</div>
+
+</div>
+<!-- ================= DRAWER ================= -->
+
+<div class="drawer" id="drawer">
+
+<div class="drawer-header">
+
+<div class="drawer-avatar">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<h2 id="drawerName">Loading...</h2>
+
+<p>Lootic Premium Member</p>
+
+</div>
+
+<a href="dashboard.html">
+<i class="fa-solid fa-house"></i>
+<span>Dashboard</span>
+</a>
+
+<a href="products.html">
+<i class="fa-solid fa-cube"></i>
+<span>Products</span>
+</a>
+
+<a href="history.html">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<span>History</span>
+</a>
+
+<a href="wallet.html">
+<i class="fa-solid fa-wallet"></i>
+<span>Wallet</span>
+</a>
+
+<a href="withdrawal.html">
+<i class="fa-solid fa-money-bill-transfer"></i>
+<span>Withdraw</span>
+</a>
+
+<a href="support.html">
+<i class="fa-solid fa-headset"></i>
+<span>Support</span>
+</a>
+
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</a>
+
+<a href="#" id="logoutBtn">
+<i class="fa-solid fa-right-from-bracket"></i>
+<span>Logout</span>
+</a>
+
+</div>
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html" class="active">
+<i class="fa-solid fa-house"></i>
+<span>Home</span>
+</a>
+
+<a href="products.html">
+<i class="fa-solid fa-store"></i>
+<span>Store</span>
+</a>
+
+<a href="wallet.html">
+<i class="fa-solid fa-wallet"></i>
+<span>Wallet</span>
+</a>
+<a href="withdrawal.html">
+<i class="fa-solid fa-money-bill-transfer"></i>
+<span>Withdraw</span>
+</a>
+
+<a href="profile.html">
+<i class="fa-solid fa-user"></i>
+<span>Profile</span>
+</a>
+
+</nav>
+
+</div>
+<!-- Platform Info Popup -->
+
+<div class="popup-overlay" id="popup">
+
+<div class="popup">
+
+<button id="closePopup">✕</button>
+
+<h2>Platform Info</h2>
+
+<p>🎁 Sign-up Bonus: ₹100</p>
+
+<p>💰 Telegram Join Reward: ₹100</p>
+
+<p>💸 Minimum Withdraw: ₹180</p>
+
+<button id="joinTelegram">
+Join Telegram Channel
+</button>
+
+</div>
+
+</div>
+
+<script type="module" src="dashboard.js"></script>
+</body>
+</html>
+<script type="module" src="dashboard.js"></script>
+
+</body>
+</html>

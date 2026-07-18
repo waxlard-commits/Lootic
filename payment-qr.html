@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment Verification</title>
+
+<link rel="stylesheet" href="payment-qr.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="topbar">
+
+        <a href="payment.html" class="back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+        <h2>Complete Payment</h2>
+
+    </div>
+
+    <!-- Amount Card -->
+
+    <div class="amount-card">
+
+        <p>Amount to Pay</p>
+
+        <h1 id="payAmount">₹0</h1>
+
+    </div>
+
+    <!-- QR Card -->
+
+    <div class="card">
+
+        <h3>Scan QR Code</h3>
+
+        <!-- Replace with your QR image -->
+
+<img src="qr.png" class="qr-image" alt="QR Code">
+
+        <p class="or">OR</p>
+            </span>
+
+            <button id="copyBtn">
+
+                <i class="fa-regular fa-copy"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Upload Screenshot -->
+
+    <div class="card">
+
+        <h3>Upload Payment Screenshot</h3>
+
+        <input
+        type="file"
+        id="screenshot"
+        accept="image/*">
+
+    </div>
+
+    <!-- UTR -->
+
+    <div class="card">
+
+        <h3>Enter UTR Number</h3>
+
+        <input
+        type="text"
+        id="utr"
+        placeholder="Enter 12 Digit UTR">
+
+    </div>
+
+    <!-- Submit -->
+
+    <button class="submit-btn">
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        Submit Payment
+
+    </button>
+
+</div>
+
+<script src="payment-qr.js"></script>
+
+</body>
+</html>

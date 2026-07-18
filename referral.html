@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Referral</title>
+
+<link rel="stylesheet" href="referral.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="topbar">
+
+        <a href="dashboard.html" class="back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+        <h2>Refer & Earn</h2>
+
+    </div>
+
+    <!-- Referral Banner -->
+    <div class="banner">
+
+        <i class="fa-solid fa-gift"></i>
+
+        <h2>Invite Friends</h2>
+
+        <p>Share your referral code and earn rewards when your friends join Lootic.</p>
+
+    </div>
+
+    <!-- Referral Code -->
+    <div class="card">
+
+        <h3>Your Referral Code</h3>
+
+        <div class="code-box">
+
+            <span id="refCode">LOOTIC123</span>
+
+            <button id="copyCode">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Referral Link -->
+    <div class="card">
+
+        <h3>Your Referral Link</h3>
+
+        <div class="code-box">
+
+            <span id="refLink">
+                https://lootic.com/signup?ref=LOOTIC123
+            </span>
+
+            <button id="copyLink">
+                <i class="fa-solid fa-link"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Statistics -->
+    <div class="stats">
+
+        <div class="stat-box">
+
+            <h2 id="totalReferrals">0</h2>
+
+            <p>Total Referrals</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2 id="totalBonus">₹0</h2>
+
+            <p>Total Bonus</p>
+
+        </div>
+
+    </div>
+
+    <!-- Share Button -->
+
+    <button id="shareBtn">
+
+        <i class="fa-solid fa-share-nodes"></i>
+
+        Share Referral Link
+
+    </button>
+
+    <!-- History -->
+
+    <div class="history">
+
+        <h3>Referral History</h3>
+
+        <div id="historyList">
+
+            <p>No referrals yet.</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="referral.js"></script>
+
+</body>
+</html>
